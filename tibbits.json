@@ -1804,7 +1804,9 @@
             ],
             "form": "M1S",
             "category": "input",
-            "requires": [],
+            "requires": [
+                "interrupt"
+            ],
             "lines": [
                 {
                     "id": "CSL",
@@ -3034,7 +3036,7 @@
                 }
             ],
             "form": "H2",
-            "category": "connector",
+            "category": "io",
             "requires": [
                 "serial",
                 "interrupt"
@@ -3112,7 +3114,7 @@
                 }
             ],
             "form": "H2",
-            "category": "connector",
+            "category": "io",
             "requires": [
                 "serial",
                 "interrupt"
@@ -3190,7 +3192,7 @@
                 }
             ],
             "form": "H2",
-            "category": "connector",
+            "category": "io",
             "requires": [
                 "serial",
                 "interrupt"
@@ -3268,7 +3270,7 @@
                 }
             ],
             "form": "H2",
-            "category": "connector",
+            "category": "io",
             "requires": [
                 "serial",
                 "interrupt"
@@ -3496,7 +3498,7 @@
         "good": {
             "model": "53",
             "name": "Isolated 4-20mA ADC",
-            "description": "Two-channel isolated ADC with 4 ~ 20mA range. Not recommended for new designs.",
+            "description": "Two-channel isolated ADC with 4 ~ 20mA range.",
             "id": "tibbit_53_A",
             "for_sale": 1,
             "desc_svg": [
@@ -3718,7 +3720,10 @@
     },
     {
         "main": {
-            "mates": [],
+            "mates": [
+                "19",
+                "20"
+            ],
             "power": [
                 {
                     "voltage": "5V",
@@ -3727,24 +3732,63 @@
                 }
             ],
             "form": "H2",
-            "category": "connector",
-            "requires": [],
-            "lines": []
+            "category": "io",
+            "requires": [
+                
+            ],
+            "lines": [
+                {
+                    "id": "-CS",
+                    "requirement": 1,
+                    "message": " You will have no control of the -CS line"
+                },
+                {
+                    "id": "SCLK",
+                    "requirement": 1,
+                    "message": " You will have no control of the SCLK line"
+                },
+                {
+                    "id": "MOSI",
+                    "requirement": 1,
+                    "message": " You will have no control of the MOSI line"
+                },
+                {
+                    "id": "MISO",
+                    "requirement": 1,
+                    "message": " You will have no control of the MISO line"
+                },
+                {
+                    "id": "SCL",
+                    "requirement": 1,
+                    "message": " You will have no control of the SCLK line"
+                },
+                {
+                    "id": "SDA",
+                    "requirement": 1,
+                    "message": " You will have no control of the SDA line"
+                }
+            ]
         },
         "good": {
             "model": "61_1",
-            "name": "Isolated ±10V, 4-20mA ADC with 24V Output",
-            "description": "Isolated two-channel ±10V and two-channel 4-20mA ADC with 24V output",
+            "name": "ISOLATED ±10V, 4-20mA ADC Tibbit with 24V Output",
+            "description": "ISOLATED ±10V, 4-20mA ADC Tibbit",
             "id": "tibbit_61_1",
             "for_sale": 1,
             "desc_svg": [
-                
+                "ISOLATED",
+                "±10V",
+                "4-20MA",
+                "ADC"
             ]
         }
     },
     {
         "main": {
-            "mates": [],
+            "mates": [
+                "19",
+                "20"
+            ],
             "power": [
                 {
                     "voltage": "5V",
@@ -3753,46 +3797,108 @@
                 }
             ],
             "form": "H2",
-            "category": "connector",
-            "requires": [],
+            "category": "input",
+            "requires": [
+                
+            ],
             "lines": [
+                {
+                    "id": "-CS",
+                    "requirement": 1,
+                    "message": " You will have no control of the -CS line"
+                },
+                {
+                    "id": "SCLK",
+                    "requirement": 1,
+                    "message": " You will have no control of the SCLK line"
+                },
+                {
+                    "id": "MOSI",
+                    "requirement": 1,
+                    "message": " You will have no control of the MOSI line"
+                },
+                {
+                    "id": "MISO",
+                    "requirement": 1,
+                    "message": " You will have no control of the MISO line"
+                },
+                {
+                    "id": "SCL",
+                    "requirement": 1,
+                    "message": " You will have no control of the SCLK line"
+                },
+                {
+                    "id": "SDA",
+                    "requirement": 1,
+                    "message": " You will have no control of the SDA line"
+                }
             ]
         },
         "good": {
             "model": "61_2",
-            "name": "Isolated ±10V, 4-20mA ADC",
-            "description": "Isolated two-channel ±10V and two-channel 4-20mA ADC",
+            "name": "ISOLATED ±10V, 4-20mA ADC Tibbit",
+            "description": "ISOLATED ±10V, 4-20mA ADC Tibbit",
             "id": "tibbit_61_2",
             "for_sale": 1,
             "desc_svg": [
-                
+                "ISOLATED",
+                "±10V",
+                "4-20MA",
+                "ADC",
+                "WITH",
+                "24V OUT"
             ]
         }
     },
     {
         "main": {
-            "mates": [],
+            "mates": [
+                "21",
+                "20"
+            ],
             "power": [
                 {
                     "voltage": "5V",
                     "supply": false,
-                    "value": "12"
+                    "value": "20"
                 }
             ],
             "form": "M1T",
-            "category": "input",
+            "category": "io",
             "requires": [],
             "lines": [
+                {
+                    "id": "SCL",
+                    "requirement": 1,
+                    "message": ""
+                },
+                {
+                    "id": "SDA",
+                    "requirement": 1,
+                    "message": ""
+                },
+                {
+                    "id": "-RST",
+                    "requirement": 1,
+                    "message": ""
+                },
+                {
+                    "id": "-BUSY",
+                    "requirement": 1,
+                    "message": ""
+                }
             ]
         },
         "good": {
             "model": "62",
-            "name": "One-wire Tibbit",
-            "description": "ONe-wire/Single-wire Tibbit",
+            "name": "Two 1-Wire/Single-Wire Ports",
+            "description": "Two 1-Wire/Single-Wire Ports",
             "id": "tibbit_62",
             "for_sale": 1,
             "desc_svg": [
-                
+                "2-CHANNEL",
+                "1-WIRE/",
+                "SNGL-WIRE"
             ]
         }
     },
@@ -3896,9 +4002,9 @@
         },
         "good": {
             "model": "WA2000C",
-            "name": "WA2000C Wi-Fi Add-on Module",
-            "description": "WA2000C Wi-Fi Add-on Module",
-            "id": "tibbit_WA2000C",
+            "name": "WA2000C Wi-Fi Add-on Module with on-board antenna",
+            "description": "WA2000C Wi-Fi Add-on Module with on-board antenna",
+            "id": "WA2000C",
             "for_sale": 1,
             "desc_svg": [
                 "WA2000C Wi-Fi",
@@ -3924,7 +4030,7 @@
             "model": "WA2000U",
             "name": "WA2000U Wi-Fi Add-on Module",
             "description": "WA2000U Wi-Fi Add-on Module",
-            "id": "tibbit_WA2000U",
+            "id": "WA2000U",
             "for_sale": 1,
             "desc_svg": [
                 "WA2000U Wi-Fi",
@@ -3950,7 +4056,7 @@
             "model": "WM6256",
             "name": "WM6256 Wi-Fi Add-on Module",
             "description": "WM6256 Wi-Fi Add-on Module",
-            "id": "tibbit_WM6256",
+            "id": "WM6256",
             "for_sale": 1,
             "desc_svg": [
                 "WM6256 Wi-Fi",

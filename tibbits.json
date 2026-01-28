@@ -920,8 +920,8 @@
         "good": {
             "model": "05",
             "name": "RS485 port",
-            "description": "RS485 port with full-duplex or half-duplex operation.",
-            "id": "tibbit_05_A",
+            "description": "RS485 port with full-duplex or half-duplex operation (provides 5V output).",
+            "id": "tibbit_05_b",
             "for_sale": 1,
             "desc_svg": [
                 "RS485 PORT",

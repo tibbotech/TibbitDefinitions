@@ -3514,6 +3514,76 @@
                 {
                     "voltage": "5V",
                     "supply": false,
+                    "value": "50"
+                }
+            ],
+            "form": "H2",
+            "category": "io",
+            "requires": [],
+            "lines": [
+                {
+                    "id": "BCLK",
+                    "requirement": 2,
+                    "message": ""
+                },
+                {
+                    "id": "WCLK",
+                    "requirement": 2,
+                    "message": ""
+                },
+                {
+                    "id": "MCLK",
+                    "requirement": 1,
+                    "message": ""
+                },
+                {
+                    "id": "RESET",
+                    "requirement": 1,
+                    "message": ""
+                },
+                {
+                    "id": "I2C_SCL",
+                    "requirement": 1,
+                    "message": ""
+                },
+                {
+                    "id": "I2C_SDA",
+                    "requirement": 2,
+                    "message": ""
+                },
+                {
+                    "id": "DOUT",
+                    "requirement": 1,
+                    "message": ""
+                },
+                {
+                    "id": "DIN",
+                    "requirement": 1,
+                    "message": ""
+                }
+            ]
+        },
+        "good": {
+            "model": "48",
+            "name": "Audio In/Out",
+            "description": "Audio In/Out Tibbit",
+            "id": "tibbit_48",
+            "for_sale": 1,
+            "desc_svg": [
+                "AUDIO",
+                "IN/OUT"
+            ]
+        },
+        "spec": {
+        }
+    },
+    {
+        "main": {
+            "mates": [],
+            "power": [
+                {
+                    "voltage": "5V",
+                    "supply": false,
                     "value": "10"
                 }
             ],

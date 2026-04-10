@@ -3579,6 +3579,35 @@
     },
     {
         "main": {
+            "mates": [
+                "00_1"
+            ],
+            "power": [
+                {
+                    "voltage": "5V",
+                    "supply": false,
+                    "value": "10"
+                }
+            ],
+            "form": "C2",
+            "category": "connector",
+            "requires": [],
+            "lines": []
+        },
+        "good": {
+            "model": "49",
+            "name": "Micro SD card slot",
+            "description": "Micro SD card slot Tibbit",
+            "id": "tibbit_49_A",
+            "for_sale": 1,
+            "desc_svg": [
+                "MICRO SD",
+                "CARD SLOT"
+            ]
+        }
+    },
+    {
+        "main": {
             "mates": [],
             "power": [
                 {

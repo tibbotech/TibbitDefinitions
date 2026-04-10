@@ -3567,7 +3567,7 @@
             "model": "48",
             "name": "Audio In/Out",
             "description": "Audio In/Out Tibbit",
-            "id": "tibbit_48",
+            "id": "tibbit_48_A",
             "for_sale": 1,
             "desc_svg": [
                 "AUDIO",

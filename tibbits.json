@@ -4042,7 +4042,7 @@
                 {
                     "id": "SCL",
                     "requirement": 1,
-                    "message": " You will have no control of the SCLK line"
+                    "message": " You will have no control of the SCL line"
                 },
                 {
                     "id": "SDA",
@@ -4108,7 +4108,7 @@
                 {
                     "id": "SCL",
                     "requirement": 1,
-                    "message": " You will have no control of the SCLK line"
+                    "message": " You will have no control of the SCL line"
                 },
                 {
                     "id": "SDA",
